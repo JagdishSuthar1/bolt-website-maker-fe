@@ -1,0 +1,65 @@
+{
+  "node": {
+    "4022a11a2397ec40a47cabdc90977eb16f66bc919a": {
+      "workers": {
+        "app/chat/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/chat/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/helpers/getAllMessages.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/helpers/createMessage.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/helpers/updateWebContainerState.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/helpers/getWebContainerState.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/helpers/getAllMessages.ts"
+        }
+      },
+      "layer": {
+        "app/chat/[id]/page": "action-browser"
+      },
+      "exportedName": "default",
+      "filename": "src/app/helpers/getAllMessages.ts"
+    },
+    "70bd83c31ed711ce64fdf609b3483bd3a039044bc5": {
+      "workers": {
+        "app/chat/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/chat/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/helpers/getAllMessages.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/helpers/createMessage.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/helpers/updateWebContainerState.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/helpers/getWebContainerState.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/helpers/createMessage.ts"
+        }
+      },
+      "layer": {
+        "app/chat/[id]/page": "action-browser"
+      },
+      "exportedName": "default",
+      "filename": "src/app/helpers/createMessage.ts"
+    },
+    "6004fab3c1a533cd7757426df9cfaf5cea540c38a9": {
+      "workers": {
+        "app/chat/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/chat/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/helpers/getAllMessages.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/helpers/createMessage.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/helpers/updateWebContainerState.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/helpers/getWebContainerState.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/helpers/updateWebContainerState.ts"
+        }
+      },
+      "layer": {
+        "app/chat/[id]/page": "action-browser"
+      },
+      "exportedName": "default",
+      "filename": "src/app/helpers/updateWebContainerState.ts"
+    },
+    "409929015043f71751a6824db274f5d3f8c4f33897": {
+      "workers": {
+        "app/chat/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/chat/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/helpers/getAllMessages.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/app/helpers/createMessage.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/app/helpers/updateWebContainerState.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/app/helpers/getWebContainerState.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "default",
+          "filename": "src/app/helpers/getWebContainerState.ts"
+        }
+      },
+      "layer": {
+        "app/chat/[id]/page": "action-browser"
+      },
+      "exportedName": "default",
+      "filename": "src/app/helpers/getWebContainerState.ts"
+    }
+  },
+  "edge": {}
+}

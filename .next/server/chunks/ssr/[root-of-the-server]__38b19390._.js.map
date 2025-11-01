@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/jagdish/Desktop/harkirat/bolt-project/my-bolt/src/app/page.tsx"],"sourcesContent":["import { useEffect } from 'react';\nimport Header from '../components/Header';\nimport HeroSection from '../components/HeroSection';\nimport FeatureSection from '../components/FeatureSection';\nimport ShowcaseSection from '../components/ShowcaseSection';\nimport ParallaxSection from '../components/ParallaxSection';\nimport Footer from '../components/Footer';\n\nconst LandingPage = () => {\n  useEffect(() => {\n    window.scrollTo(0, 0);\n  }, []);\n\n  return (\n    <div className=\"min-h-screen bg-background text-foreground\">\n      <Header />\n      <main>\n        <HeroSection />\n        <FeatureSection />\n        <ShowcaseSection />\n        <ParallaxSection />\n      </main>\n      <Footer />\n    </div>\n  );\n};\n\nexport default LandingPage;\n"],"names":[],"mappings":";;;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAQA,MAAM,cAAc;IAClB,IAAA,kNAAS,EAAC;QACR,OAAO,QAAQ,CAAC,GAAG;IACrB,GAAG,EAAE;IAEL,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;;;;;0BACD,8OAAC;;kCACC,8OAAC;;;;;kCACD,8OAAC;;;;;kCACD,8OAAC;;;;;kCACD,8OAAC;;;;;;;;;;;0BAEH,8OAAC;;;;;;;;;;;AAGP;uCAEe","debugId":null}}]
+}

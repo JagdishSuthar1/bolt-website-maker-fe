@@ -1,0 +1,1 @@
+export type ResponseForTemplate = { BASE_PROMPT: string, uiPrompt: string, userPrompt: string };
