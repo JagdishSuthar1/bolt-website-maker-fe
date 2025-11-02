@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ BOLT Frontend (AI Website Builder)
 
-## Getting Started
+This is the frontend of the AI Website Builder (BOLT) project — a platform that allows users to generate, edit, and preview complete web applications using AI-powered code generation. It connects with the backend service to process user prompts, communicate with Gemini LLM, and display live, runnable previews directly in the browser.
 
-First, run the development server:
+# Architecture
+![img](https://drive.google.com/uc?export=view&id=1w_97NGI7NySFG5IVp22CFC8IwSCeXd6E)
 
+## 🧠 Features
+
+* 🧩 **Prompt-Based Code Generation** – Users can describe an app (e.g., "Build a to-do app"), and the system generates it automatically.
+* 💬 **Interactive Chat UI** – Send follow-up prompts like "Add dark mode," and see real-time updates.
+* ⚙️ **Backend Integration** – Connects with the BOLT backend API for AI processing and context retrieval.
+* 💾 **Database Support** – Uses MongoDB for user sessions, projects, and authentication data.
+* 🧑‍💻 **Google Authentication** – Integrated with NextAuth.js for secure login via Google.
+* 🧱 **Live Code Preview** – Displays real-time code and execution in the browser using WebContainer.
+* 🎨 **Modern UI** – Built with Next.js, TypeScript, Tailwind CSS, and Shadcn UI for a smooth developer experience.
+
+## 🧩 Tech Stack
+
+* Next.js 14
+* TypeScript
+* Tailwind CSS
+* NextAuth.js
+* WebContainer
+* Axios (for backend API calls)
+* MongoDB
+* Shadcn UI
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/bolt-frontend.git
+cd bolt-frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Add environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` file in the root folder and add the following:
+```env
+DATABASE_URL="mongodb://localhost:27017/bolt-project?replicaSet=rs0"
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
+NEXTAUTH_URL="http://localhost:3000/"
+NEXTAUTH_SECRET="your_nextauth_secret"
+BACKEND_URL="https://bolt-website-maker-be-production.up.railway.app"
+```
 
-## Learn More
+### 4. Run the development server
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Visit your app at: 👉 [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔄 How It Works
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. The user logs in using Google Authentication.
+2. They enter a prompt (like "Create a blog app") into the frontend interface.
+3. The frontend sends this prompt to the backend (`BACKEND_URL`) for processing.
+4. The backend interacts with Gemini LLM to generate project code and sends it back.
+5. The generated code is displayed in the browser via a file explorer and a live WebContainer preview.
+6. When users send follow-up prompts, the frontend communicates with the backend again to fetch modified code using contextual data from Pinecone.
 
-## Deploy on Vercel
+## 🧠 Key Learning
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project demonstrates how Next.js, LangChain, and Gemini can work together to build a fully AI-driven, interactive web application builder — from prompt to deployment — all in the browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+
+This project is open-source under the MIT License.
